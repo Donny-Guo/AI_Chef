@@ -53,7 +53,7 @@ export default function App() {
 
         <IngredientSection ingredients={ingredients} />
 
-        {<GetRecipeSection getRecipe={getRecipe}/>}
+        {ingredients.length >= 2 && <GetRecipeSection getRecipe={getRecipe}/>}
 
         {recipe && <RecipeSection recipe={recipe} ref={recipeSection}/>}
       </section>
