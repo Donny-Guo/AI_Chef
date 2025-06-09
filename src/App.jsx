@@ -41,7 +41,7 @@ export default function App() {
       })
     })
     const result = await response.json()
-    setRecipe(result['response'])
+    setRecipe(result['recipe'])
   }
 
   return (
